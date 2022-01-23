@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Rubik;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+body div.content {
+    margin-bottom: 48px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f7f7f7;
+    padding: 12px;
+}
+
+.title {
+    background: #00008b;
+    width: 100%;
+}
+
+.text-title {
+    font-size: 30px;
+    color: #f7f7f7;
+}
+
+.img-title {
+    height: 75px;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: black
+}
+
+.link-footer:hover {
+    text-decoration: none;
+    color: #00008b
+}
