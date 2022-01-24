@@ -24,23 +24,23 @@
             <form method="POST" action="register.php">
                 <div class="form-group">
                     <label>First name</label>
-                    <input type="text" name="firstname" class="form-control" placeholder="Frist name" required>
+                    <input type="text" name="firstname" class="form-control" placeholder="Frist name">
                 </div>
                 <div class="form-group">
                     <label>Last name</label>
-                    <input type="text" name="lastname" class="form-control" placeholder="Last name" required>
+                    <input type="text" name="lastname" class="form-control" placeholder="Last name">
                 </div>
                 <div class="form-group">
                     <label>EMail address</label>
-                    <input type="text" name="emailaddress" class="form-control" placeholder="EMail address" required>
+                    <input type="text" name="emailaddress" class="form-control" placeholder="EMail address">
                 </div>
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" name="username" class="form-control" placeholder="Username" required>
+                    <input type="text" name="username" class="form-control" placeholder="Username">
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    <input type="password" name="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label>Password (confirm)</label>

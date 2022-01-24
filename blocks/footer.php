@@ -2,7 +2,7 @@
     <!-- footer -->
     <div class="footer">
         <div class="mx-3">
-            &copy Chiara Nigro
+            Chiara Nigro / Daniele Reich
         </div>
     </div>
 

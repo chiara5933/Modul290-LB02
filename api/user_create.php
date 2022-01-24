@@ -14,9 +14,6 @@ if (strlen(trim($username)) > 0 && strlen(trim($firstname)) > 0 && strlen(trim($
     die();
 }; 
 
-
 $password = md5($password);
 registerUser($username, $password, $emailaddress, $firstname, $lastname);
-echo("SUCCESS - The user has been created!")
-
-?>
+echo("SUCCESS - The user has been created!");

@@ -42,5 +42,3 @@ if(!empty(strlen(trim($password)))){
     updateUserSingle($user_id, "password", $password);
     echo("SUCCESS - password updated!");
 }
-
-echo("HELP");

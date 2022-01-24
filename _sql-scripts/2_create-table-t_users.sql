@@ -1,6 +1,5 @@
 -- run script as user: m290_lb02
 
--- t_ stands for table
 USE m290_lb02; -- datenbank auswählen
 CREATE TABLE `m290_lb02`.`t_users` ( 
     `id` INT NULL AUTO_INCREMENT, -- feld id mit automatischer zählung erstellen
@@ -11,8 +10,8 @@ CREATE TABLE `m290_lb02`.`t_users` (
     `lastname` VARCHAR(50) NOT NULL ,  -- feld lastname
     `disabled` TINYINT NOT NULL DEFAULT '0' , -- feld disabled für status des users
     `createdat` datetime NOT NULL, -- feld createdat für erstellungsdatum
-    PRIMARY KEY (`id`)
+    PRIMARY KEY (`id`) -- id als primary key definieren
 ); 
 
-ALTER TABLE `t_users` ADD UNIQUE( `username`); 
-ALTER TABLE `t_users` CHANGE `createdat` `createdat` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP; 
+ALTER TABLE `t_users` ADD UNIQUE( `username`); -- spalte "username" als unique definieren
+ALTER TABLE `t_users` CHANGE `createdat` `createdat` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP; -- default für createdat als CURRENT_TIMESTAMP 
