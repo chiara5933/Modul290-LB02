@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "b334a281-63cd-429d-8f71-d350a91085c7",
+		"name": "m290_lb02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE USER",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.56.101/api/user_create.php?secret=100b49a8&username=maxmustermann&firstname=Max&lastname=Mustermann&emailaddress=max.mustermann@mail.com&password=Sommer2020",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"101"
+					],
+					"path": [
+						"api",
+						"user_create.php"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "100b49a8"
+						},
+						{
+							"key": "username",
+							"value": "maxmustermann"
+						},
+						{
+							"key": "firstname",
+							"value": "Max"
+						},
+						{
+							"key": "lastname",
+							"value": "Mustermann"
+						},
+						{
+							"key": "emailaddress",
+							"value": "max.mustermann@mail.com"
+						},
+						{
+							"key": "password",
+							"value": "Sommer2020"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.56.101/api/user_create.php?secret=100b49a8&user_id=4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"101"
+					],
+					"path": [
+						"api",
+						"user_create.php"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "100b49a8"
+						},
+						{
+							"key": "user_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.56.101/api/user_update.php?secret=100b49a8&user_id=4&username=maxmustermann_new&emailaddress=maxmuster@mann.ch&passwort=Winter2022&firstname=Max&lastname=Mustermann",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"101"
+					],
+					"path": [
+						"api",
+						"user_update.php"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "100b49a8"
+						},
+						{
+							"key": "user_id",
+							"value": "4"
+						},
+						{
+							"key": "username",
+							"value": "maxmustermann_new"
+						},
+						{
+							"key": "emailaddress",
+							"value": "maxmuster@mann.ch"
+						},
+						{
+							"key": "passwort",
+							"value": "Winter2022"
+						},
+						{
+							"key": "firstname",
+							"value": "Max"
+						},
+						{
+							"key": "lastname",
+							"value": "Mustermann"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER (ALL)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.56.101/api/user.php?secret=100b49a8",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"101"
+					],
+					"path": [
+						"api",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "100b49a8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER (SPECIFIC)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.56.101/api/user.php?secret=100b49a8&user_id=4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"56",
+						"101"
+					],
+					"path": [
+						"api",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "secret",
+							"value": "100b49a8"
+						},
+						{
+							"key": "user_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

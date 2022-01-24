@@ -1,4 +1,3 @@
-<pre>
 <?php
 include("../includes/connect-database.php");
 include("../includes/functions.php");

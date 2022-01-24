@@ -51,3 +51,9 @@ function getUserDetails($userid) {
     $prepared->execute();
     return $prepared->fetchAll(\PDO::FETCH_ASSOC);
 }
+
+function updateUserSingle($user_id, $needle, $newvalue) {
+    global $database;
+    $sql = "UPDATE `t_users` SET `{$needle}` = '{$newvalue}' WHERE `t_users`.`id` = {$user_id}";
+    $database->query($sql);
+}

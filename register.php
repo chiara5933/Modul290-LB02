@@ -24,9 +24,6 @@ header( "refresh:5;url=index.php" );
 };  // endif 
 ?>
 
-
-
-
 <?php if($password != $passwordconfirm) { ?>
     <div class="card text-white bg-danger mb-3">
         <div class="card-body">
@@ -42,7 +39,7 @@ $password = md5($password);
 registerUser($username, $password, $emailaddress, $firstname, $lastname);
 
 ?>
-<div class="card text-white bg-danger mb-3">
+<div class="card text-white bg-success mb-3">
     <div class="card-body">
         <h5>Sucess!</h5>
         <span>Your User has been created! You will be redirected to the homepage in a few seconds.</span>        
@@ -50,17 +47,9 @@ registerUser($username, $password, $emailaddress, $firstname, $lastname);
 </div>
 
 <?php
-header( "refresh:5;url=index.php" );
+    header( "refresh:5;url=index.php" ); 
 };
-
-
 ?>
 
-
-<?php  ?>
-
-
-
 </div>
-
-<?php include("blocks/footer.php") ?>
+<?php include("blocks/footer.php"); ?>
