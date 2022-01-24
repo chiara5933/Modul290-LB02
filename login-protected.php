@@ -1,4 +1,9 @@
-<?php include("blocks/header.php") ?>
+<?php 
+session_start();
+
+include("blocks/header.php") 
+// $_SESSION["user_id"]
+?>
 
 <?php
  // $_POST["username"]
