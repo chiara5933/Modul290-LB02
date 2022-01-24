@@ -65,3 +65,15 @@ function updateUserSingle($user_id, $needle, $newvalue) {
     $sql = "UPDATE `t_users` SET `{$needle}` = '{$newvalue}' WHERE `t_users`.`id` = {$user_id}";
     $database->query($sql);
 }
+
+function checkUser($username, $password) {
+    $userpw = getDetailsbyUsername($username)["password"];
+    $password = md5($password);
+
+    if ($userpw == $password){
+        return 1;
+    } else {
+        return 0;
+    }
+
+}

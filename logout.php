@@ -1,8 +1,6 @@
 <?php include("blocks/header.php") ?>
 <?php
 session_start();
-// $_POST["username"]
- // $_POST["password"]
 ?>
  
 
@@ -27,7 +25,11 @@ session_start();
         <span>You will be redirected to the homepage in a few seconds</span>        
     </div>
 </div>
-<?php header( "refresh:5;url=index.php" ); ?>
+<?php 
+unset($_SESSION['user']);
+session_destroy();
+header( "refresh:5;url=index.php" ); 
+?>
 <?php }; ?>
 
 <?php include("blocks/footer.php") ?>
