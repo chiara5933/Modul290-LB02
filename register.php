@@ -20,14 +20,14 @@ $passwordconfirm = $_POST["passwordconfirm"];
         </div>
     </div>
 <?php 
-};  // endif 
 header( "refresh:5;url=index.php" );
+};  // endif 
 ?>
 
 
 
 
-<?php if($password == $passwordconfirm) { } else { ?>
+<?php if($password != $passwordconfirm) { ?>
     <div class="card text-white bg-danger mb-3">
         <div class="card-body">
             <h5>Error!</h5>
@@ -35,15 +35,29 @@ header( "refresh:5;url=index.php" );
         </div>
     </div>
 <?php 
-};  // endif 
 header( "refresh:5;url=index.php" );
+} else {
 
-// convert password to md5 hash
 $password = md5($password);
+registerUser($username, $password, $emailaddress, $firstname, $lastname);
+
+?>
+<div class="card text-white bg-danger mb-3">
+    <div class="card-body">
+        <h5>Sucess!</h5>
+        <span>Your User has been created! You will be redirected to the homepage in a few seconds.</span>        
+    </div>
+</div>
+
+<?php
+header( "refresh:5;url=index.php" );
+};
 
 
 ?>
 
+
+<?php  ?>
 
 
 

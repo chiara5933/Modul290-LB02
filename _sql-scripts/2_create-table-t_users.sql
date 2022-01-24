@@ -13,3 +13,6 @@ CREATE TABLE `m290_lb02`.`t_users` (
     `createdat` datetime NOT NULL, -- feld createdat für erstellungsdatum
     PRIMARY KEY (`id`)
 ); 
+
+ALTER TABLE `t_users` ADD UNIQUE( `username`); 
+ALTER TABLE `t_users` CHANGE `createdat` `createdat` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP; 

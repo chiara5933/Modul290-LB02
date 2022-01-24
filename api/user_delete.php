@@ -7,8 +7,8 @@ include("../includes/check-apisecret.php");
 $user_id = $_GET["user_id"];
 
 if(isset($user_id)){
-    var_dump(getUserDetails($user_id));
+    deleteUser($user_id);
 } else {
-    var_dump(getAllItemsFromTable("t_users"));
+    echo("ERROR - No user_id given");
+    die();
 }
-

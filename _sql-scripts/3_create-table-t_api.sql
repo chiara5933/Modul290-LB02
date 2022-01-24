@@ -8,3 +8,5 @@ CREATE TABLE `m290_lb02`.`t_api` (
     `description` VARCHAR(120) NOT NULL ,  -- feld passwort mit max. 32 zeichen, da md5 hash
     PRIMARY KEY (`id`)
 ); 
+
+ALTER TABLE `t_api` ADD UNIQUE( `secret`); 
